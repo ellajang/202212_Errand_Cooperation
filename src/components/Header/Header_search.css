@@ -7,11 +7,25 @@
   top: 0;
   z-index: 100;
 }
+.header_mypage {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(234, 237, 237, 0.9);
+}
 
 .header_logo {
   width: 50px;
   object-fit: contain;
+  margin: 0 10px;
+}
+
+.header_logo_mypage {
+  width: 50px;
   margin: 0 20px;
+  margin-top: 20px;
 }
 
 .header_search {
@@ -55,4 +69,9 @@
   height: 30px;
   width: 30px;
   object-fit: contain;
+}
+
+.backpage1 {
+  width: 80px;
+  height: 60px;
 }
