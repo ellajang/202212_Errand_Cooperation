@@ -34,7 +34,7 @@ function E_product({
   return (
     <div className="Errandmake">
       <form onSubmit={handlePostMatched}>
-        <input type="text" name="id" value={postId} hidden />
+        {/* <input type="text" name="id" value={postId} hidden />
         <div class="container">
           <h3 class="main">상품명</h3>
           <div class="main">{product}</div>
@@ -64,14 +64,38 @@ function E_product({
           <div class="person_phonenumber">
             <i class="main"></i> 전화번호 ( 안심번호 ) : {client_phone}
           </div>
+        </div> */}
+        <input type="text" name="id" value="1" hidden />
+        <div class="container">
+          <h3 class="main">상품명</h3>
+          <div class="main">커피</div>
         </div>
-        <input
-          type="button"
-          class="button"
-          value="취소"
-          onClick={() => window.location.replace("/home")}
-        ></input>
-        <input type="submit" class="button" value="접수"></input>
+        <div className="container">
+          <h3 className="main">상품 판매처</h3>
+          <div className="main">창조관</div>
+        </div>
+        <div class="container">
+          <h3 class="main">상품 비용</h3>
+          <div class="main">5000 원</div>
+        </div>
+        <div class="container">
+          <h3 class="main">심부름 비용</h3>
+          <div class="main">1000 원</div>
+        </div>
+        <div class="container">
+          <h3 class="main">심부름 내용</h3>
+          <div class="main">커피좀 사다주세요</div>
+        </div>
+        <div class="container">
+          <h3 class="main">거래 장소</h3>
+          <div class="main">창조관 근처</div>
+        </div>
+        <div class="container">
+          <h3 class="main">고객 : 이연세</h3>
+          <div class="person_phonenumber">
+            <i class="main"></i> 전화번호 ( 안심번호 ) : 01027745931
+          </div>
+        </div>
       </form>
     </div>
   );

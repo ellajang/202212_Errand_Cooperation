@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styles from "./M_ask.module.css";
 import Button from "../components/Button/Button";
-import Header from "../components/Header/Header";
+// import Header from "../components/Header/Header";
 import { RiQuestionFill } from "react-icons/ri";
+import Header from "../components/Header/Header"
 
 export default function M_ask() {
   const [ask, setAsk] = useState("");

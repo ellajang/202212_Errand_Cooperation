@@ -6,8 +6,7 @@ import { HiSpeakerphone } from "react-icons/hi";
 import { RiQuestionnaireLine } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
 import styles from "./H_mypage.module.css";
-import Header from "../components/Header/Header";
-import Header_search from "../components/Header/Header_search"
+import Header from "../components/Header/Header"
 import Rate from "../components/Rate/Rate";
 import useUser from "../components/hooks/use-user";
 

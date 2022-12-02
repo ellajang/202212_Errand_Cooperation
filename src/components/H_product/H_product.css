@@ -9,7 +9,7 @@
     background-color: white;
     z-index: 1;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.1);
 }
 
 .product_rating {
