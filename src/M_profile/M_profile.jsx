@@ -11,7 +11,6 @@ import Radio from "../components/Radio/Radio";
 import RadioGroup from "../components/Radio/RadioGroup";
 import useUser from "../components/hooks/use-user";
 
-
 export default function M_profile() {
   const [loading, error, user] = useUser();
   const [form, setForm] = useState({
@@ -22,22 +21,22 @@ export default function M_profile() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
-    console.log(form.gender)
+    console.log(form.gender);
     data.append("gender", form.gender);
     const value = Object.fromEntries(data.entries());
     let model = {
-      method: 'PUT',
+      method: "PUT",
       body: JSON.stringify(value),
       headers: {
         Authorization: localStorage.getItem("email"),
-        'Content-Type': 'application/json'
-      }
+        "Content-Type": "application/json",
+      },
     };
     fetch(`/api/member`, model)
-        .then((res) => res.json())
-        .then((res) => {
-          window.location.reload();
-        })
+      .then((res) => res.json())
+      .then((res) => {
+        window.location.reload();
+      });
   };
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -86,10 +85,13 @@ export default function M_profile() {
             </label>
             <RadioGroup value={form.gender} onChange={handleChange}>
               <Radio name="gender" value="1">
-                남자
+                남성
               </Radio>
               <Radio name="gender" value="2">
-                여자
+                여성
+              </Radio>
+              <Radio name="gender" value="3">
+                기타
               </Radio>
             </RadioGroup>
           </div>
@@ -98,6 +100,8 @@ export default function M_profile() {
           <BtnSubmit>수정하기</BtnSubmit>
         </div>
       </form>
+      <footer>&copy;{new Date().getFullYear()} Errand App</footer>
+      {/*footer css는 mypage 참조 */}
     </>
   );
 }

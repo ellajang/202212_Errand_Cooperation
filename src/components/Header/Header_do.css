@@ -1,14 +1,14 @@
-.header {
-  height: 100px;
+.header_do {
+  height: 90px;
   display: flex;
   align-items: center;
-  background-color: #182b58;
+  background-color: rgb(234, 237, 237, 0.7);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-.status-bar__column1 {
+.status-bar__column_ {
   color: white;
   justify-content: space-between;
   font-size: 18px;

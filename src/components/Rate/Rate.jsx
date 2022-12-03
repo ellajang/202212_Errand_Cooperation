@@ -61,7 +61,7 @@ export default function Rate() {
 
   return (
     <>
-      <button onClick={handleStarSubmit}>test</button>
+      {/*       <button onClick={handleStarSubmit}>test</button> mypage에 평점 제출이 필요한건가요? */}
       <Stars>
         {ARRAY.map((el, idx) => {
           return (

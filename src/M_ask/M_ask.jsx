@@ -34,10 +34,9 @@ export default function M_ask() {
             </div>
           </div>
         </form>
-        <footer className={styles.footer}>
-          <RiQuestionFill />
-          <span>문의 전화번호 : 010-1234-5678</span>
-        </footer>
+        <span>문의 전화번호 : 010-1234-5678</span>
+        <footer>&copy;{new Date().getFullYear()} Errand App</footer>
+        {/*footer css는 mypage 참조 */}
       </div>
     </>
   );

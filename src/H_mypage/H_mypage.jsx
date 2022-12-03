@@ -76,6 +76,7 @@ export default function H_mypage() {
           </li>
         </Link>
       </ul>
+      <footer>&copy;{new Date().getFullYear()} Errand App</footer>
     </>
   );
 }

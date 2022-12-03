@@ -7,7 +7,7 @@ import Header_search from "../components/Header/Header_search";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  /* const navigate = useNavigate();
+  const navigate = useNavigate();
   const navigateToPurchase = () => {
     navigate("/E_start");
   };
@@ -33,11 +33,11 @@ function Home() {
         />
       </div>
     );
-  } */
+  }
   return (
     <div>
       <Header_search />
-      <H_product />
+      {lis}
       <Link to="/E_make">
         <nav class="nav">
           <ul class="nav__list">
