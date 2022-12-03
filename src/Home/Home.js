@@ -34,7 +34,6 @@ function Home() {
       </div>
     );
   }
-  
   return (
     <div>
       <Header_search />
