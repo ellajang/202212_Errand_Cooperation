@@ -1,6 +1,5 @@
 /* necessary to give position: relative to parent. */
-
-.Errandmake{
+.E_product{
     position: relative;
     margin: 20px 10px 10px 10px;
     background-color: white;

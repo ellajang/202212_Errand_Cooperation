@@ -32,7 +32,7 @@ function E_product({
   }
 
   return (
-    <div className="Errandmake">
+    <div className="E_product">
       <form onSubmit={handlePostMatched}>
         {/* <input type="text" name="id" value={postId} hidden />
         <div class="container">

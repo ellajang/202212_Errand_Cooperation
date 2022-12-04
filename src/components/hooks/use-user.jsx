@@ -11,7 +11,7 @@ export default function useUser(){
                 Authorization: localStorage.getItem("email")
             }
         };
-        fetch(`/api/member`, model)
+        fetch(`ec2-3-38-226-253.ap-northeast-2.compute.amazonaws.com/api/member`, model)
             .then((res) => res.json())
             .then((res) => setUser(res))
         .catch((e) => setError("Error"))
