@@ -1,45 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./E_second.css";
 import E_product from "../components/E_product/E_product";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header_do from "../components/Header/Header_do";
 
 function E_second() {
+  const [post, setPost] = useState([]);
+  let { id } = useParams();
+
+  useEffect(() => {
+    let model = {
+      method: "GET",
+      headers: {
+        Authorization: localStorage.getItem("email"),
+      },
+    };
+    fetch(`/api/posts/` + id, model)
+      .then((res) => res.json())
+      .then((res) => setPost(res));
+  }, []);
   return (
     <div>
       <Header_do />
       <div className="profile">
-        <p className="name">김연세</p>
+        <p className="name">{post.client_nick}</p>
         <ul>
           <li>
             <p>전화번호</p>
-            <p>010-1234-5678</p>
+            <p>{post.client_phone}</p>
           </li>
           <li>
             <p>평점</p>
+            {/*todo*/}
           </li>
         </ul>
       </div>
       <div className="profile">
-        <p className="name">김연세</p>
+        <p className="name">{post.helper_nick}</p>
         <ul>
           <li>
             <p>전화번호</p>
-            <p>010-1234-5678</p>
+            <p>{post.helper_phone}</p>
           </li>
           <li>
             <p>평점</p>
+            {/*todo*/}
           </li>
         </ul>
       </div>
       <div>
-        <E_product title="편의점" price="4000" errand_price="4000" />
+        <E_product />
       </div>
       <div className="button_row">
         <Link to="/home">
           <div className="button">취소</div>
         </Link>
-        <Link to="/E_end">
+        <Link to={"/E_end/" + id}>
           <div className="button">완료</div>
         </Link>
       </div>

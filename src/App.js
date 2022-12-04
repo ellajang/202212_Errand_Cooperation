@@ -18,6 +18,7 @@ import M_cancel from "./M_cancel/M_cancel";
 import M_list from "./M_list/M_list";
 import M_profile from "./M_profile/M_profile";
 import M_service from "./M_service/M_service";
+import Auth from "./Auth";
 
 function App() {
   return (
@@ -30,16 +31,17 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/H_category" element={<H_category />} />
           <Route path="/E_make" element={<E_make />} />
-          <Route path="/E_start" element={<E_start />} />
-          <Route path="/E_first" element={<E_first />} />
-          <Route path="/E_second" element={<E_second />} />
-          <Route path="/E_end" element={<E_end />} />
+          <Route path="/E_start/:id" element={<E_start />} />
+          <Route path="/E_first/:id" element={<E_first />} />
+          <Route path="/E_second/:id" element={<E_second />} />
+          <Route path="/E_end/:id" element={<E_end />} />
           <Route path="/H_mypage" element={<H_mypage />} />
           <Route path="/M_ask" element={<M_ask />} />
           <Route path="/M_cancel" element={<M_cancel />} />
           <Route path="/M_list" element={<M_list />} />
           <Route path="/M_profile" element={<M_profile />} />
           <Route path="/M_service" element={<M_service />} />
+          <Route path="/oauth/callback/kakao" element={<Auth />} />
         </Routes>
       </div>
     </Router>

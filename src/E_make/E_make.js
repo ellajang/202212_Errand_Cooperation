@@ -34,7 +34,7 @@ function E_make() {
       .then((res) => res.json())
       .then((res) => {
         window.alert("심부름이 등록되었습니다.");
-        window.location.replace("/Errandongoing/" + res);
+        window.location.replace("/Home");
       });
   }
 
@@ -80,7 +80,7 @@ function E_make() {
               <input
                 class="effect-1"
                 type="text"
-                placeholder="  Placeholder Text"
+                placeholder="Placeholder Text"
                 name="fee"
               />
               <span class="focus-border"></span>
@@ -109,9 +109,7 @@ function E_make() {
         </form>
       </div>
       <div className="button_row">
-        <Link to="/home">
-          <div className="button">등록</div>
-        </Link>
+        <input type="submit" className="button" value="등록"></input>
       </div>
       <div className="footer">&copy;{new Date().getFullYear()} Errand App</div>
     </div>
