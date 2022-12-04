@@ -3,6 +3,7 @@ import "./E_start.css";
 import E_product from "../components/E_product/E_product";
 import { useParams } from "react-router-dom";
 import Header_do from "../components/Header/Header_do";
+import { Link } from "react-router-dom";
 
 function E_start() {
   const [post, setPost] = useState([]);
@@ -41,11 +42,15 @@ function E_start() {
           />
         }
       </header>
-      <div>
-        <input type="button" class="button" value="취소"></input>
-
-        <input type="button" class="button" value="수락"></input>
+      <div className="button_row">
+        <Link to="/home">
+          <div className="button">취소</div>
+        </Link>
+        <Link to="/E_first">
+          <div className="button">수락</div>
+        </Link>
       </div>
+      <div className="footer">&copy;{new Date().getFullYear()} Errand App</div>
     </div>
   );
 }
