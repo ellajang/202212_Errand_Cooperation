@@ -1,6 +1,6 @@
 .form-errand {
   color: #003876;
-  padding: 10px 20px 5px;
+  padding: 10px 20px 50px;
   position: relative;
 }
 
@@ -66,6 +66,7 @@
 .button_row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -96,8 +97,9 @@
   box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
 }
 
-.footer {
-  position: relative;
-  bottom: -600px;
-  width: 100%;
+.footer_ {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

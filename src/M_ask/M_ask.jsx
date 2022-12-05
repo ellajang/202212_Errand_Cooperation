@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 export default function M_ask() {
   const [ask, setAsk] = useState("");
   const [open, setOpen] = useState(false);
+
   const handleChange = (e) => {
     setAsk(e.target.value);
   };
@@ -48,10 +49,10 @@ export default function M_ask() {
             </div>
           </div>
         </form>
-        <div className={styles.asknumber}>
+        <footer className={styles.footer}>
           <RiQuestionFill />
-          <span>문의 전화번호 : 010-1234-5678</span>
-        </div>
+          <span> &nbsp;문의 전화번호 : 010-1234-5678</span>
+        </footer>
       </div>
       <div>
         <Dialog

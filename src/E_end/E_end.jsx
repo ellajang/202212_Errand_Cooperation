@@ -10,6 +10,7 @@ export default function E_end() {
   const data = new FormData();
   data.append("star", rate.toString());
   const value = Object.fromEntries(data.entries());
+
   function sendRate(event) {
     let model = {
       method: "PUT",
@@ -23,6 +24,7 @@ export default function E_end() {
       window.alert("평가가 완료되었습니다.");
     });
   }
+
   return (
     <>
       <div className={styles.container}>
@@ -37,7 +39,7 @@ export default function E_end() {
           <BtnSubmit>완료</BtnSubmit>
         </Link>
       </div>
-      <div className="footer">&copy;{new Date().getFullYear()} Errand App</div>
+      <div className="footer_">&copy;{new Date().getFullYear()} Errand App</div>
     </>
   );
 }

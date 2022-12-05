@@ -1,14 +1,15 @@
 .box {
   display: flex;
-  margin: 10px 30px;
+  margin: 10px 0px;
   width: 100%;
+  justify-content: center;
 }
 .radio {
   appearance: none;
   display: none;
 }
 .label {
-  width: 180px;
+  width: 120px;
   height: 40px;
   text-align: center;
   border-radius: 10px;
@@ -17,6 +18,9 @@
   transition-property: transform, color, box-shadow;
   transform: none;
   background: var(--color-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .label:hover {
   background: var(--color-yellow);

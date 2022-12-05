@@ -35,7 +35,7 @@ function E_start() {
           </div>
         </Link>
       </div>
-      <div className="footer">&copy;{new Date().getFullYear()} Errand App</div>
+      <div className="footer_">&copy;{new Date().getFullYear()} Errand App</div>
     </div>
   );
 }
