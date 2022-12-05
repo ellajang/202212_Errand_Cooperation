@@ -1,13 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import './E_second.css'
+import React, { useEffect, useState } from "react";
+import "./E_second.css";
 import E_product from "../components/E_product/E_product";
-import {Link, useParams} from 'react-router-dom';
-import Header_do from '../components/Header/Header_do';
-
+import { Link, useParams } from "react-router-dom";
+import Header_do from "../components/Header/Header_do";
 
 function E_second() {
   const [post, setPost] = useState([]);
-  let {id} = useParams();
+  let { id } = useParams();
 
   useEffect(() => {
     let model = {
@@ -22,7 +21,7 @@ function E_second() {
   }, []);
   return (
     <div>
-      <Header_do/>
+      <Header_do />
       <div className="profile">
         <p className="name">{post.client_nick}</p>
         <ul>
@@ -50,7 +49,7 @@ function E_second() {
         </ul>
       </div>
       <div>
-        <E_product/>
+        <E_product />
       </div>
       <div className="button_row">
         <Link to="/home">
@@ -62,10 +61,7 @@ function E_second() {
       </div>
       <div className="footer">&copy;{new Date().getFullYear()} Errand App</div>
     </div>
-
   );
-
-
 }
 
 export default E_second;

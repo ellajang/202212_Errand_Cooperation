@@ -25,7 +25,6 @@ export default function H_mypage() {
   //   };
   // }, []);
   const rate = 4;
-  // if (error) return <p>{error}</p>; => 해당 함수 적용 시 error페이지 나옴
   return (
     <>
       <Header />
@@ -101,7 +100,9 @@ export default function H_mypage() {
           </li>
         </Link>
       </ul>
-      <div className={styles.footer}>&copy;{new Date().getFullYear()} Errand App</div>
+      <div className={styles.footer}>
+        &copy;{new Date().getFullYear()} Errand App
+      </div>
     </>
   );
 }
