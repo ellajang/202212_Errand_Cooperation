@@ -1,85 +1,32 @@
-/* .sub-menu {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  transition: 0.5s;
-}
-.sub-menu ul {
-  list-style: none;
-  padding: 0;
-}
-.sub-menu {
-  width: 0;
-  height: 100%;
-  overflow: hidden;
-  background: chartreuse;
-  transition-duration: 0.5s;
-}
-.main-nav-left:hover > .sub-menu {
-  height: 100%;
-  width: 300px;
-  overflow: hidden;
-}
-.sub-menu-list li {
-  line-height: 3rem;
-} */
-
-ul,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .Ct_title {
   align-items: center;
-  display: flex;
   justify-content: center;
-  font-size: 24px;
+  display: flex;
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
-.depTitle {
-  font-size: 20px;
-  font-weight: 430;
+.Ct {
+  margin-top: 30px;
+  padding: 50px;
 }
 
-.dep1 {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  height: 200px;
-  text-align: center;
-}
-
-.dep1 > li {
-  display: inline-block;
-  width: 200px;
+.Ct1 {
   background-color: white;
-  vertical-align: top;
-  padding: 30px;
   border-radius: 15px;
-}
-.dep2 {
-  display: none;
-}
-
-.dep1 > li:hover > .dep2 {
-  display: block;
-}
-
-.dep1 > li > a {
-  padding: 10px 0;
-}
-
-.footer {
-  margin-top: 490px;
+  flex-direction: column;
+  box-shadow: 0 0 5px var(--color-grey), 0 2px 5px var(--color-grey);
+  margin: 20px;
+  height: 35px;
+  text-align: center;
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.Ct1:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
 }
