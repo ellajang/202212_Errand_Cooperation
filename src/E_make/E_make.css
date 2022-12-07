@@ -23,7 +23,7 @@ input[type="text"] {
 
 .col-3 {
   padding-top: -15px;
-  width: auto;
+  width: 50%;
   margin: 20px;
   margin-top: 5px;
   position: relative;
@@ -44,6 +44,7 @@ input[type="text"] {
   border-radius: 8px;
   margin-left: -20px;
   margin-top: 10px;
+  border-color: #ccc;
 }
 
 .effect-1 ~ .focus-border {
