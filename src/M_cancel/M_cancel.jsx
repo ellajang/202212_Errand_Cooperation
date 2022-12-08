@@ -9,18 +9,15 @@ export default function CancelledErrand() {
   const [cancelLists, setCancelLists] = useState([]);
 
   useEffect(() => {
-    let model = {
-      method: "GET",
-      headers: {
-        Authorization: localStorage.getItem("email"),
-        "Content-Type": "application/json",
-      },
-    };
-    fetch("/api/posts/cancel", model)
+    fetch("data/errandList.json")
       .then((res) => res.json())
       .then((data) => {
+        console.log("데이터 받아옴");
         setCancelLists(data);
       });
+    return () => {
+      console.log("데이터 청소");
+    };
   }, []);
 
   return (

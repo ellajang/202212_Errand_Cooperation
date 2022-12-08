@@ -7,14 +7,7 @@ import Star from "./Star";
 export default function ErrandList() {
   const [errandLists, setErrandLists] = useState([]);
   useEffect(() => {
-    let model = {
-      method: "GET",
-      headers: {
-        Authorization: localStorage.getItem("email"),
-        "Content-Type": "application/json",
-      },
-    };
-    fetch("/api/posts/my", model)
+    fetch("data/errandList.json")
       .then((res) => res.json())
       .then((data) => {
         console.log("심부름 내역 데이터 받아옴");
@@ -22,7 +15,6 @@ export default function ErrandList() {
       });
     return () => {
       console.log("심부름 내역 데이터 청소");
-      console.log(errandLists);
     };
   }, []);
 
